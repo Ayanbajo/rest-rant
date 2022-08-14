@@ -15,5 +15,5 @@ app.get('/', function (req, res) {
 app.get('*', (req, res) => {
     res.status(404).send('<h1> 404 Page</h1>')
 })
-
+// to pull the PORT variable from the .env file.
 app.listen(process.env.PORT)
