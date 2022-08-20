@@ -5,6 +5,9 @@ const app = express()
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+
+
 // to import the router we created in places.js
 app.use('/places', require('./controllers/places'))
 
