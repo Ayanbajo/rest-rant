@@ -3,4 +3,7 @@ h1 {
     color: cornflowerblue;
     /* background-size: 50px 50px; */
   }
-  
+img{
+    width: 100;
+    height: 100;
+}
