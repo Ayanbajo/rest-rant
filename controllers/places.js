@@ -74,4 +74,9 @@ router.delete('/:id', (req, res) => {
   }
 })
 
+// UPDATE
+router.put('/', (req, res) => {
+  res.render('places', {place: places[id]})
+})
+
 module.exports = router
