@@ -11,7 +11,7 @@ function show (data) {
             <p>
                 Not rated
             </p>
-            <h2>Descritption</h2>
+            <h2>Description</h2>
             <p>
             Located in {data.place.city}, {data.place.state}
             </p>

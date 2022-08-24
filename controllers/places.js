@@ -23,7 +23,7 @@ router.get('/:id/edit', (req, res) => {
       res.render('error404')
   }
   else {
-    res.render('places/edit', { place: places[id] })
+    res.render('places/edit', { place: places[id], id})
   }
 })
 
@@ -75,8 +75,33 @@ router.delete('/:id', (req, res) => {
 })
 
 // UPDATE
-router.put('/', (req, res) => {
-  res.render('places', {place: places[id]})
+router.put('/:id', (req, res) => {
+let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+     if (!req.body.pic) {
+       req.body.pic = 'http://placekitten.com/400/400'
+}
+     if (!req.body.city) {
+         req.body.city = 'Anytown'
+}
+     if (!req.body.state) {
+         req.body.state= 'USA'
+}
+     places[id] = req.body
+     res.redirect(`/places/${id}`)
+}
 })
 
 module.exports = router
+
+
+
+
+
+
