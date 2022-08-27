@@ -7,14 +7,14 @@ function home () {
           <main>
               <h1>HOME</h1>
               <div>
-              <img src="/images/400.jpg" alt="homepic"/>
+              <img src="/images/pastry.jpg" alt="homepic"/>
               </div>
               <a href="/places">
-                <button className="btn btn-secondary">Places Page</button>
+                <button className="btn btn-outline-secondary">Places Page</button>
               </a>
           </main>
       </Def>
-    )
+      )
   }
   
 module.exports = home
