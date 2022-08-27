@@ -14,6 +14,15 @@ h1 {
     color: #EDC2D8FF;
   }
 
+h2 {
+    color: #EDC2D8FF;
+  }
+
+label {
+    color: #8ABAD3FF;
+    font-weight: bold;
+  }
+
 nav {
     background-color: #8ABAD3FF;
     padding: 10px;
