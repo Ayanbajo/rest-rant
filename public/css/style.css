@@ -1,21 +1,21 @@
 body {
-  background-color: lightblue;
+  background-color: #EDC2D8FF;
   text-align: center;
 }
 
 main {
   margin-right: 20px;
   margin-left: 20px;
-  background-color: white;
+  background-color: #FCF6F5FF;
 }
 
 h1 {
     text-align: center;
-    color: cornflowerblue;
+    color: #EDC2D8FF;
   }
 
 nav {
-    background-color: cornflowerblue;
+    background-color: #8ABAD3FF;
     padding: 10px;
 }
 
