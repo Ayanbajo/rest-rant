@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function show () {
+function show (data) {
     return (
         <Def>
           <main>
@@ -11,7 +11,7 @@ function show () {
             <h3> Located in {data.place.city}, {data.place.state}</h3>
             </div>
             <div className = "col-sm-6">
-            <h1>{ data.place.name }</h1>
+            <h1>{data.place.name}</h1>
             <h2>Rating</h2>
             <p>
                 Not rated
