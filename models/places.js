@@ -19,38 +19,3 @@ placeSchema.methods.showEstablished = function() {
 
 
 module.exports = mongoose.model('Place', placeSchema)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// module.exports = [{       
-//         name: 'H-Thai-ML',
-//         city: 'Seattle',
-//         state: 'WA',
-//         cuisines: 'Thai, Pan-Asian',
-//         pic: '/images/400.jpg'
-//       }, {
-//         name: 'Coding Cat Cafe',
-//         city: 'Phoenix',
-//         state: 'AZ',
-//         cuisines: 'Coffee, Bakery',
-//         pic: '/images/400.jpg'
-//       }]

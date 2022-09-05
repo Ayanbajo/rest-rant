@@ -16,6 +16,7 @@ function new_form (data) {
                 <h1> Add a new Place</h1>
                 {message}
                 <form method="POST" action="/places">
+                    <div slassName ="row">
                     <div className="col-sm-12 col-md-6 col-lg-12">
                         <label htmlFor="name">Place Name</label>
                         <input className="form-control" id="name" name="name" required />
@@ -24,6 +25,8 @@ function new_form (data) {
                         <label htmlFor="pic">Place Picture</label>
                         <input className="form-control" id="pic" name="pic" />
                     </div>
+                    </div>
+                    <div classNmae = "row">
                     <div className="col-sm-12 col-md-6 col-lg-12">
                         <label htmlFor="city">City</label>
                         <input className="form-control" id="city" name="city" />
@@ -39,6 +42,7 @@ function new_form (data) {
                     <div className="col-sm-12 col-md-6 col-lg-12">
                         <label htmlFor="founded">Founded Year</label>
                         <input type="number" className="form-control" id="founded" name="founded" value={new Date().getFullYear()} />
+                    </div>
                     </div>
                     <input className="btn btn-outline-secondary" type="submit" value="Add Place" />
                 </form>
