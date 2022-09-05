@@ -65,10 +65,6 @@ router.get('/:id/edit', (req, res) => {
   res.send('GET edit form stub')
 })
 
-router.post('/:id/rant', (req, res) => {
-  res.send('GET /places/:id/rant stub')
-})
-
 router.post('/:id/comment', (req, res) => {
   console.log(req.body)
   db.Place.findById(req.params.id)

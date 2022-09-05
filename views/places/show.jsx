@@ -9,7 +9,7 @@ function show (data) {
     comments = data.place.comments.map(c => {
       return (
         <div className="border col-sm-3">
-          <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
+          <h2 className="rant">{c.rant ? 'Rant!  😡' : 'Rave! 😻'}</h2>
           <h4>{c.content}</h4>
           <h3>
             <stong>- {c.author}</stong>
@@ -47,27 +47,28 @@ function show (data) {
             </div>
             <h2>Comments</h2>
             {comments}
-            <form method="POST" action={`/places/${data.place.id}/comment`}>
-              <div className = "form-row">
-              <div className=" form-group col-sm-12">
-                          <label htmlFor="content">Content</label>
-                          <textarea className="form-control" id="content" name="content"></textarea>
+         <form method = "POST" action = {`/places/${data.place.id}/comment`} >
+              <div className="row">
+              <div className="form-group col-sm-12">
+                  <label htmlFor="content">Content</label>
+                  <textarea className="form-control" id="content" name="content" ></textarea>
               </div>
-              <div className=" form-group col-sm-4">
-                          <label htmlFor="author">Author</label>
-                          <input type = "text" className="form-control" id="author" name="author" />
               </div>
-              
+              <div className="row">
               <div className="form-group col-sm-4">
-                          <label htmlFor="stars">Star Rating</label>
-                          <input type = "range" step="0.5" max="5" id="stars" name="stars" />
+                  <label htmlFor="author">Author</label>
+                  <input className="form-control" id="author" name="author"  />
+              </div>
+              <div className="form-group col-sm-4">
+                  <label htmlFor="stars">Star Rating</label>
+                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars"/>
               </div>
               <div className="form-group col-sm-2">
-                          <label htmlFor="rant">Rant</label>
-                          <input type="checkbox" id="rant" name="rant" />
+                  <label htmlFor="rant">Rant?</label>
+                  <input type="checkbox" id="rant" name="rant"/>
               </div>
               </div>
-              <input className="btn btn-outline-secondary" type="submit" value="Add Comment" />
+              <input className="btn btn-outline-secondary" type="submit" value="Add Comment"/>
             </form>
           </main>
         </Def>
@@ -75,3 +76,4 @@ function show (data) {
 }
 
 module.exports = show
+
